@@ -411,6 +411,7 @@
                 <button class="tab" onclick="showTab('health')">🏥 Health Notes</button>
                 <button class="tab" onclick="showTab('notes')">📝 Notes</button>
                 <button class="tab" onclick="showTab('phone-list')">📞 Phone List</button>
+                <button class="tab" onclick="showTab('email-directory')">✉️ Email List</button>
                 <button class="tab" onclick="exportToWord()">📄 Export Word Doc</button>
             </div>
 
@@ -593,6 +594,14 @@
                     <p style="color: #666; margin-bottom: 20px;">All family members alphabetically by first name with phone numbers</p>
                     <button class="big-btn" onclick="exportPhoneList()" style="margin-bottom: 20px;">📄 Export Phone Directory</button>
                     <div class="phone-list" id="phone-directory-list"></div>
+                </div>
+
+                <!-- Email Directory Tab -->
+                <div id="email-directory-tab" class="tab-content" style="display: none;">
+                    <h2>✉️ Email Directory</h2>
+                    <p style="color: #666; margin-bottom: 20px;">All family members with email addresses</p>
+                    <button class="big-btn" onclick="exportEmailList()" style="margin-bottom: 20px;">📄 Export Email Directory</button>
+                    <div class="phone-list" id="email-directory-list"></div>
                 </div>
             </div>
         </div>
